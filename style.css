@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    background:linear-gradient(-45deg,#ff9ec4,#ff39f3,#ffd6e7,#fff5f9);
+    background-size:400% 400%;
+    animation:gradient 12s ease infinite;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+@keyframes gradient{
+
+0%{
+background-position:0% 50%;
+}
+
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
+}
+
+.welcome-card{
+background:white;
+padding:50px;
+width:650px;
+text-align:center;
+border-radius:25px;
+box-shadow:0 15px 40px rgba(0,0,0,.2);
+}
+
+h1{
+font-size: 45px;
+color:#ff2d75;
+margin-bottom:25px;
+}
+
+.subtitle{
+font-size: 22px;
+line-height: 1.8;
+color:#555;
+margin-bottom:35px;
+}
+button{
+background: #ff2d75;
+color:white;
+padding:18px 35px;
+font-size: 20px;
+border:none;
+border-radius: 50px;
+cursor:pointer;
+transition:.3s;
+}
+button:hover{
+transform:scale(1.05);
+}
+
+.surprise{
+text-align: center;
+padding: 40px;
+}
+.slideshow{
+width:350px;
+margin:auto;
+}
+.slides{
+display: none;
+width: 100%;
+border-radius: 20px;
+box-shadow: 0 0 20px hotpink;
+}
+#message{
+margin-top: 30px;
+font-size: 22px;
+line-height: 1.8;
+white-space: pre-line;
+max-width: 800px;
+margin-left: auto;
+margin-right: auto;
+}
+.spotify-btn{
+display:inline-block;
+margin-top: 35px;
+padding: 15px 30px;
+background: #1DB954;
+color: white;
+text-decoration: none;
+border-radius: 30px;
+font-size: 20px;
+font-weight: bold;
+}
